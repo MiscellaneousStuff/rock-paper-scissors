@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <div class="game">
+        <div class="game__info"></div>
+        <div class="game__move">
+            <button class="game__choice">Rock</button>
+            <button class="game__choice">Paper</button>
+            <button class="game__choice">Scissors</button>
+            <button class="game__reset">Reset</button>
+        </div>
+    </div>
+    <div class="room-name"></div>
+    <div class="chat-messages"></div>
+    <div class="users"></div>
+    <form id="send">
+        <input type="text" id="msg" placeholder="Enter message" required autocomplete="off" />
+        <button>Send</button>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+        integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
